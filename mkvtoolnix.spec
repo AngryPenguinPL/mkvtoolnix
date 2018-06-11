@@ -11,11 +11,12 @@ Source0:	https://mkvtoolnix.download/sources/%{name}-%{version}.tar.xz
 License:	GPLv2+ and LGPLv2+
 Group:		Video
 BuildRequires:	bzip2-devel
-BuildRequires:	libebml-devel >= 1.3.0
+BuildRequires:	libebml-devel >= 1.3.5
 BuildRequires:	lzo-devel
-BuildRequires:	libmatroska-devel >= 1.4.1
+BuildRequires:	libmatroska-devel >= 1.4.8
 BuildRequires:	magic-devel
 BuildRequires:	qt5-devel
+BuildRequires:  pkgconfig(Qt5Multimedia)
 BuildRequires:	pkgconfig(expat)
 BuildRequires:	pkgconfig(flac)
 BuildRequires:	pkgconfig(libcurl)
