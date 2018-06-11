@@ -32,7 +32,7 @@ BuildRequires:	docbook-style-xsl
 BuildRequires:	xsltproc
 # Optional - for building the translated man pages (penguin).
 BuildRequires: po4a
-BuildRequires: pkgconfig(cmark)
+BuildRequires: pkgconfig(libcmark)
 
 %description
 These tools allow information about (mkvinfo) or extraction
