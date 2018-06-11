@@ -73,8 +73,8 @@ export CXXFLAGS=`echo $CXXFLAGS | sed s/-gdwarf-4//`
 %configure \
 	--enable-qt \
 	--disable-wxwidgets
-./drake %{_smp_mflags}
+rake -j1
 
 %install
-./drake install DESTDIR=%{buildroot}
+rake DESTDIR=%{buildroot} install
 %find_lang %{name}
