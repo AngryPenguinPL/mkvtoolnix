@@ -23,7 +23,7 @@ BuildRequires:	pkgconfig(libcurl)
 BuildRequires:	pkgconfig(libpcre)
 BuildRequires:	pkgconfig(vorbis)
 BuildRequires:	pkgconfig(ogg)
-BuildRequires:	boost-devel >= 1.46
+BuildRequires:	boost-devel >= 1.49
 BuildRequires:	ruby
 BuildRequires:  rubygems
 BuildRequires:	ruby-rake
@@ -43,21 +43,15 @@ can find more information about it and its underlying technology, the
 Extensible Binary Meta Language (EBML), at http://www.matroska.org/
 
 %files -f %{name}.lang
-%doc README.md ChangeLog* COPYING NEWS
+%doc COPYING README*
 %{_bindir}/*
-%{_datadir}/applications/mkvinfo.desktop
-%{_datadir}/applications/mkvtoolnix-gui.desktop
+%{_datadir}/applications/org.bunkus.mkvinfo.desktop
 %{_datadir}/icons/hicolor/*/apps/*.*
-%{_datadir}/mime/packages/mkvtoolnix.xml
+%{_datadir}/mime/packages/%{name}.xml
+%dir %{_datadir}/%{name}
+%{_datadir}/%{name}/*
 %{_mandir}/man1/*
-%lang(ca) %{_mandir}/ca/man1/*
-%lang(ja) %{_mandir}/ja/man1/*
-%lang(de) %{_mandir}/de/man1/*
-%lang(es) %{_mandir}/es/man1/*
-%lang(nl) %{_mandir}/nl/man1/*
-%lang(pl) %{_mandir}/pl/man1/*
-%lang(uk) %{_mandir}/uk/man1/*
-%lang(zh_CN) %{_mandir}/zh_CN/man1/*
+%{_datadir}/applications/org.bunkus.mkvtoolnix-gui.desktop
 
 #----------------------------------------------------------------------------
 
