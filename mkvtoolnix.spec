@@ -21,9 +21,15 @@ BuildRequires:	pkgconfig(flac)
 BuildRequires:	pkgconfig(libcurl)
 BuildRequires:	pkgconfig(libpcre)
 BuildRequires:	pkgconfig(vorbis)
+BuildRequires:	pkgconfig(ogg)
 BuildRequires:	boost-devel >= 1.46
 BuildRequires:	ruby
 BuildRequires:  rubygems
+# Upstream need it both for man-page (penguin).
+BuildRequires:	docbook-style-xsl
+BuildRequires:	xsltproc
+# Optional - for building the translated man pages (penguin).
+BuildRequires: po4a
 
 %description
 These tools allow information about (mkvinfo) or extraction
