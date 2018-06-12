@@ -60,7 +60,6 @@ Extensible Binary Meta Language (EBML), at http://www.matroska.org/
 %{_datadir}/man/pl
 %{_datadir}/man/uk
 %{_datadir}/man/zh_CN
-%{_datadir}/applications/org.bunkus.mkvtoolnix-gui.desktop
 
 #----------------------------------------------------------------------------
 
